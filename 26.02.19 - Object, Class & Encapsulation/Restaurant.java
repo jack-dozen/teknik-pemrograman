@@ -77,7 +77,7 @@ public class Restaurant {
     }
 
     public boolean isOutOfStock(int id) {
-        return (stok[id] == 0);
+        return (getStok(id) == 0);
     }
 
     public void nextId() {
