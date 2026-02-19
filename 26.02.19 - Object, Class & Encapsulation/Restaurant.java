@@ -56,7 +56,7 @@ public class Restaurant {
     public void tampilMenuMakanan() {
         for (int i = 0; i <= id; i++) {
             if (!isOutOfStock(i)) {
-                System.out.println(getNamaMakanan(i) + "[" + getStok(i) + "]" + "\tRp. " + getHargaMakanan(i));
+                System.out.println("(" + i + ") " + getNamaMakanan(i) + "[" + getStok(i) + "]" + "\tRp. " + getHargaMakanan(i));
             }
         }
     }
