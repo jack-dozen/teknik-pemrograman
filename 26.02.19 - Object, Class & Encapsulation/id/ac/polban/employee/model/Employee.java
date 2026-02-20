@@ -1,7 +1,6 @@
 package id.ac.polban.employee.model;
 
 public class Employee {
-    private static int totalEmployees = 0;
 
     private int id;
     private String name;
@@ -9,31 +8,62 @@ public class Employee {
     private EmploymentType type;
     private double salary;
 
+    private static int totalEmployee = 0;
+
     public Employee(int id, String name, Department department, EmploymentType type, double salary) {
         this.id = id;
         this.name = name;
         this.department = department;
         this.type = type;
         this.salary = salary;
-        totalEmployees++;
+        totalEmployee++;
     }
 
-    public static int getTotalEmployees() {
-        return totalEmployees;
+    public int getId() {
+        return id;
     }
 
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public String getName() {
+        return name;
+    }
 
-    public Department getDepartment() { return department; }
-    public void setDepartment(Department department) { this.department = department; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public EmploymentType getType() { return type; }
-    public void setType(EmploymentType type) { this.type = type; }
+    public Department getDepartment() {
+        return department;
+    }
 
-    public double getSalary() { return salary; }
-    public void setSalary(double salary) { this.salary = salary; }
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public EmploymentType getType() {
+        return type;
+    }
+
+    public void setType(EmploymentType type) {
+        this.type = type;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public static int getTotalEmployee(){
+        return totalEmployee;
+    }
+
+    public static void employeeDecrement(){
+        totalEmployee--;
+    }
 }

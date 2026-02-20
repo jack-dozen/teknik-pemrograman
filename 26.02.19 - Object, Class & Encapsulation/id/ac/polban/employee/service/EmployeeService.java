@@ -4,8 +4,8 @@ import id.ac.polban.employee.model.*;
 import java.util.HashMap;
 import java.util.Map;
 
+// mengelola operasi yang berkaitan dengan data dan aturan bisnis
 public class EmployeeService {
-    private static final double MIN_RAISE_PERCENT = 1.0;
 
     private final Map<Integer, Employee> employees = new HashMap<>();
 
@@ -18,18 +18,20 @@ public class EmployeeService {
     }
 
     public void raiseSalary(int id, double percent) {
-        if (percent < MIN_RAISE_PERCENT) {
-            System.out.println("Kenaikan gaji minimal " + MIN_RAISE_PERCENT + "%");
-            return;
-        }
         Employee emp = employees.get(id);
         if (emp != null) {
-            emp.setSalary(emp.getSalary() * (1 + percent / 100));
+            emp.setSalary(emp.getSalary() * (1 + percent/100));
         }
     }
 
-    public static double getMinRaisePercent() {
-        return MIN_RAISE_PERCENT;
+    public void removeEmployee(int id) {
+        Employee emp = employees.remove(id);
+        if (emp == null) {
+            System.out.println("Karyawan dengan id " + id + " Tidak Terdaftar!");
+        } else {
+            Employee.employeeDecrement(); // hanya kurang kalau beneran dihapus
+            System.out.println("Karyawan berhasil dihapus!");
+        }
     }
 
     public void printAllEmployees() {
@@ -37,6 +39,9 @@ public class EmployeeService {
             System.out.println("Tidak ada karyawan.");
             return;
         }
+
+        System.out.println("=== DATA KARYAWAN ===");
+
         for (Employee emp : employees.values()) {
             System.out.println("---------------------------");
             System.out.println("ID      : " + emp.getId());
