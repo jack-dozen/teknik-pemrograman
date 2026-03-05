@@ -1,11 +1,11 @@
 //*****************************************
-// Sphere.java
+// Rectangle.java
 //
-// Represents a sphere.
+// Represents a rectangle.
 //*****************************************
 public class Rectangle extends Shape{
-    public double length;
-    public double width;
+    private final double length;
+    private final double width;
 
     public Rectangle(double length, double width){
         super("Rectangle");

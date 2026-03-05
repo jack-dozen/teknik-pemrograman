@@ -1,3 +1,8 @@
+//*****************************************
+// Cylinder.java
+//
+// Represents a cylinder.
+//*****************************************
 public class Cylinder extends Shape {
     private final double radius;
     private final double height;

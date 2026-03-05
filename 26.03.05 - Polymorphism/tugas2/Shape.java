@@ -1,5 +1,5 @@
 public abstract class Shape {
-    public String ShapeName;
+    private final String ShapeName;
 
     public Shape(String ShapeName){
         this.ShapeName = ShapeName;
