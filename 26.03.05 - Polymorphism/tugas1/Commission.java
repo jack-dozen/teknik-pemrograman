@@ -1,3 +1,8 @@
+//********************************************************************
+// Commission.java Author: Zaky
+//
+// Represents a hourly commission.
+//********************************************************************
 public class Commission extends Hourly{
     private double totalSales;
     private final double commissionRate;
