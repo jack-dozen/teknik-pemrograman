@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// implements Runnable menandakan bahwa class ini bisa dijalankan sebagai thread
+// setiap object sum akan menjadi worker yang menghitung penjumlahan di range tertentu
 class sum implements Runnable{
 	private final int startNum, endNum;
 	private int partialSum = 0;
@@ -9,6 +11,8 @@ class sum implements Runnable{
 		this.endNum = endNum;
 	}
 
+	// run() adalah method dari interface Runnable
+	// run() adalah method yang otomatis dipanggil saat thread mulai jalan dengan t.start()
 	@Override
 	public void run(){
 		for (int i = startNum; i <= endNum; i++)
@@ -47,14 +51,17 @@ public class threadSum{
 			starts[i] = start;
 			ends[i] = end;
 
-			sum worker = new sum(start, end);  
+			sum worker = new sum(start, end);
 			Thread t = new Thread(worker);
-			t.start();
+			t.start(); // menjalankan thread secara paralel
 
 			threads[i] = t;
 			workers[i] = worker;
 		}
 
+		// join() memaksa main thread menunggu setiap thread selesai
+		// tanpa join(), main thread bisa langsung ngambil hasil sebelum thread selesai
+		// sehingga hasil total bisa salah atau bernilai 0
 		for (Thread t : threads) {
 			try {
 				t.join();
