@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.p2p.domain.LoanServiceTest" time="0.508" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.p2p.domain.LoanServiceTest" time="0.525" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ID"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\zkyal\AppData\Local\Temp\surefire1167474921381626324\surefirebooter-20260423095452615_3.jar C:\Users\zkyal\AppData\Local\Temp\surefire1167474921381626324 2026-04-23T09-54-52_491-jvmRun1 surefire-20260423095452615_1tmp surefire_0-20260423095452615_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\zkyal\AppData\Local\Temp\surefire3067605998297966348\surefirebooter-20260423111701045_3.jar C:\Users\zkyal\AppData\Local\Temp\surefire3067605998297966348 2026-04-23T11-17-00_920-jvmRun1 surefire-20260423111701045_1tmp surefire_0-20260423111701045_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.p2p.domain.LoanServiceTest"/>
     <property name="surefire.test.class.path" value="C:\College (Local)\Teknik Pemrograman\26.04.23 - Test-Driven Development\p2p-lending\target\test-classes;C:\College (Local)\Teknik Pemrograman\26.04.23 - Test-Driven Development\p2p-lending\target\classes;C:\Users\zkyal\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\zkyal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\zkyal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\zkyal\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\zkyal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\zkyal\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\zkyal\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\zkyal\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\zkyal\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;C:\Users\zkyal\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\zkyal\AppData\Local\Temp\surefire1167474921381626324\surefirebooter-20260423095452615_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\zkyal\AppData\Local\Temp\surefire3067605998297966348\surefirebooter-20260423111701045_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
@@ -61,32 +61,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="shouldRejectLoanWhenCreditScoreLow" classname="com.p2p.domain.LoanServiceTest" time="0.061">
-    <system-out><![CDATA[09:54:53.644 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-04: shouldRejectLoanWhenCreditScoreLow ===
-09:54:53.675 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 5000
-09:54:53.676 [main] WARN  com.p2p.service.LoanService - Loan REJECTED - credit score: 500 di bawah threshold
-09:54:53.677 [main] INFO  com.p2p.domain.LoanServiceTest - TC-04 PASSED - Loan status: REJECTED
+  <testcase name="shouldRejectLoanWhenCreditScoreLow" classname="com.p2p.domain.LoanServiceTest" time="0.054">
+    <system-out><![CDATA[11:17:02.151 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-04: shouldRejectLoanWhenCreditScoreLow ===
+11:17:02.179 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 5000
+11:17:02.180 [main] WARN  com.p2p.service.LoanService - Loan REJECTED - credit score: 500 di bawah threshold
+11:17:02.180 [main] INFO  com.p2p.domain.LoanServiceTest - TC-04 PASSED - Loan status: REJECTED
 ]]></system-out>
   </testcase>
-  <testcase name="shouldApproveLoanWhenCreditScoreHigh" classname="com.p2p.domain.LoanServiceTest" time="0.002">
-    <system-out><![CDATA[09:54:53.689 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-03: shouldApproveLoanWhenCreditScoreHigh ===
-09:54:53.690 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 5000
-09:54:53.690 [main] INFO  com.p2p.service.LoanService - Loan APPROVED - credit score: 700
-09:54:53.690 [main] INFO  com.p2p.domain.LoanServiceTest - TC-03 PASSED - Loan status: APPROVED
+  <testcase name="shouldApproveLoanWhenCreditScoreHigh" classname="com.p2p.domain.LoanServiceTest" time="0.001">
+    <system-out><![CDATA[11:17:02.192 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-03: shouldApproveLoanWhenCreditScoreHigh ===
+11:17:02.192 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 5000
+11:17:02.192 [main] INFO  com.p2p.service.LoanService - Loan APPROVED - credit score: 700
+11:17:02.192 [main] INFO  com.p2p.domain.LoanServiceTest - TC-03 PASSED - Loan status: APPROVED
 ]]></system-out>
   </testcase>
   <testcase name="shouldRejectLoanWhenAmountIsZeroOrNegative" classname="com.p2p.domain.LoanServiceTest" time="0.003">
-    <system-out><![CDATA[09:54:53.692 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-02: shouldRejectLoanWhenAmountIsZeroOrNegative ===
-09:54:53.693 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 0
-09:54:53.693 [main] WARN  com.p2p.service.LoanService - Amount tidak valid: 0
-09:54:53.693 [main] INFO  com.p2p.domain.LoanServiceTest - TC-02 PASSED - Exception: Amount harus lebih dari 0
+    <system-out><![CDATA[11:17:02.194 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-02: shouldRejectLoanWhenAmountIsZeroOrNegative ===
+11:17:02.195 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 0
+11:17:02.195 [main] WARN  com.p2p.service.LoanService - Amount tidak valid: 0
+11:17:02.195 [main] INFO  com.p2p.domain.LoanServiceTest - TC-02 PASSED - Exception: Amount harus lebih dari 0
 ]]></system-out>
   </testcase>
   <testcase name="shouldRejectLoanWhenBorrowerNotVerified" classname="com.p2p.domain.LoanServiceTest" time="0.002">
-    <system-out><![CDATA[09:54:53.696 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-01: shouldRejectLoanWhenBorrowerNotVerified ===
-09:54:53.696 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 1000
-09:54:53.697 [main] ERROR com.p2p.service.LoanService - Borrower belum terverifikasi KYC
-09:54:53.697 [main] INFO  com.p2p.domain.LoanServiceTest - TC-01 PASSED - Exception: Borrower not verified
+    <system-out><![CDATA[11:17:02.198 [main] INFO  com.p2p.domain.LoanServiceTest - === TC-01: shouldRejectLoanWhenBorrowerNotVerified ===
+11:17:02.198 [main] INFO  com.p2p.service.LoanService - Memulai proses createLoan - amount: 1000
+11:17:02.198 [main] ERROR com.p2p.service.LoanService - Borrower belum terverifikasi KYC
+11:17:02.199 [main] INFO  com.p2p.domain.LoanServiceTest - TC-01 PASSED - Exception: Borrower not verified
 ]]></system-out>
   </testcase>
 </testsuite>
